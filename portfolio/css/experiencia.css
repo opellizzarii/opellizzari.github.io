@@ -1,0 +1,137 @@
+.experiencia {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 60px 20px;
+}
+.experiencia .subtitulo {
+  color: #e0e0e0;
+}
+.experiencia-texto {
+  max-width: 40ch;
+  color: #525252;
+  margin-bottom: 60px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.33;
+}
+
+.experiencia-texto strong {
+  color: #141414;
+}
+.empresa {
+  position: relative;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: #f5f5f5;
+  padding: 20px 20px;
+  margin-bottom: 24px;
+  gap: 10px;
+  border-radius: 5px;
+  border: 1px solid #f0f0f0;
+  background: #f5f5f5;
+}
+
+.empresa:before {
+  content: "";
+  position: absolute;
+  top: 21px;
+  left: -4px;
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(180deg, #b629f8 0%, #800add 100%);
+}
+
+.empresa-ano {
+  position: absolute;
+  left: -75px;
+  top: 21px;
+  color: #525252;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.empresa-titulo {
+  color: #141414;
+  font-size: 18px;
+  font-weight: bold;
+}
+.empresa-texto {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.empresa-habilidades {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.empresa-habilidades li {
+  background-color: #fff;
+  padding: 5px 5px;
+  border-radius: 5px;
+  color: #141414;
+  display: inline-flex;
+  place-self: start;
+}
+
+@media (max-width: 820px) {
+  .experiencia {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    width: 600px;
+    box-sizing: border-box;
+  }
+
+  .experiencia div {
+    width: 550px;
+    justify-self: center;
+    box-sizing: border-box;
+  }
+
+  .experiencia .subtitulo {
+    max-width: none;
+    font-size: 6rem;
+    justify-self: center;
+  }
+  .experiencia-texto {
+    max-width: none;
+    width: 55ch;
+    margin: 24px auto;
+    text-align: center;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 653px) {
+  .empresa-ano {
+    display: none;
+  }
+  .experiencia {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+  .experiencia div {
+    width: 550px;
+    justify-self: center;
+    box-sizing: border-box;
+  }
+
+  .subtitulo {
+    width: none;
+    font-size: 5rem;
+    justify-self: center;
+  }
+  .experiencia-texto {
+    width: none;
+    width: 50ch;
+    margin: 24px auto;
+    text-align: center;
+    font-size: 16px;
+  }
+}
